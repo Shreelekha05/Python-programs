@@ -1,0 +1,13 @@
+# lists using function
+def findlarger():
+    count=0
+    for i in range(n):
+        if g[i]>= target:
+            count = count + 1
+    return count
+
+g=[10,10,30,40,10]
+n=len(g)
+target=50
+count=findlarger()
+print("total number of list greater than target",count)
