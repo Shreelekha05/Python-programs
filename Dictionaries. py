@@ -1,0 +1,22 @@
+#dictionaries
+#z=input()
+#n=len(z)
+
+store=dict()
+print(store)
+
+store['s']=5
+store['h']=6
+store['r']=7
+store['e']=9
+store['e']=8
+store[5]=10
+store['hi']="hello"
+print(store)
+
+allkeys=store.keys()
+print(allkeys)
+
+#for-each loop
+for i in allkeys:
+    print(i,store[i])
