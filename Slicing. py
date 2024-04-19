@@ -1,0 +1,25 @@
+#slicing
+#input is : i am learning python language
+n=input()
+print(n)
+
+t=n[5:10]
+print(t)
+t=n[14:20]
+print(t)
+t=n[21:26]
+print(t)
+t=n[26:29]
+print(t)
+t=n[0:5]
+print(t)
+t=n[5:16]
+print(t)
+t=n[17:29]
+print(t)
+t=n[9:13]
+print(t)
+t=n[-10:-17:-1]
+print(t)
+t=n[12:4:-1]
+print(t)
