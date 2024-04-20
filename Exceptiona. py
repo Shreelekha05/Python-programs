@@ -1,0 +1,23 @@
+#exception handling
+print("starting line")
+a=[1,2,3]
+#print(c)
+
+#print(a[4])
+try:
+    #n=10/0
+    #print(a[4])
+    print(c)
+except ZeroDivisionError:
+    print("exception occured due to zero division")
+except IndexError:
+    print("exception occured due to invalid index")
+except NameError:
+    print("exception occured due to undefined variable")
+except:
+    print("some exception occured")
+else:
+    print("no exception occured,everything works perfect")
+finally:
+    print("this is the final block")
+print("outisde try block")
