@@ -1,0 +1,15 @@
+# atm password
+print("enter your password")
+actualpassword=5555
+attempts=3
+for i in range(3):
+    password = int(input())
+    if password==actualpassword:
+        print("successfully logged in")
+        break
+    else:
+        if attempts==1:
+            print("ur account is blocked,try in next 24 hrs")
+        else:
+            print("incorrect password,you are left with ",attempts-1,"attempts")
+    attempts-=1
