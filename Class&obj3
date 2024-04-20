@@ -1,0 +1,25 @@
+class student:
+    def __init__(self ,sname ,srollno ,sm1 ,sm2 ,sm3 ,sm4 ,sm5):
+        self.name =sname
+        self.rollno =srollno
+        self.m1 =sm1
+        self.m2 =sm2
+        self.m3 =sm3
+        self.m4 =sm4
+        self.m5 =sm5
+
+    def alldetails(self):
+        print(self.name ,end=" ")
+        print(self.rollno ,end=" ")
+        print(self.m1 ,end=" ")
+        print(self.m2 ,end=" ")
+        print(self.m3 ,end=" ")
+        print(self.m4 ,end=" ")
+        print(self.m5)
+
+s1 =student("Harika","5A1" ,78 ,67 ,77 ,89 ,46)
+s1.alldetails()
+s2 =student("Swapna","5A2" ,38 ,65 ,97 ,59 ,41)
+s2.alldetails()
+s3 =student("Sushma","5A3" ,88 ,95 ,47 ,89 ,31)
+s3.alldetails()
