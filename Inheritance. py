@@ -1,0 +1,16 @@
+#inheritance
+#single i heritance
+class S:
+    def __init__(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+class S1(S):
+    def __init__(self,name,marks,rollno):
+
+        self.marks=marks
+        S.__init__(self,name,rollno)
+
+obj2=S1("shree",99,40)
+print(obj2.name)
+print(obj2.rollno)
+print(obj2.marks)
