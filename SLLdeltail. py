@@ -1,0 +1,42 @@
+#deleting nodes at tail
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+def linkedlist(head):
+    cur=head
+    while cur!=None:
+        print(cur.data,end="-->")
+        cur=cur.next
+    print()
+
+def insertAtEndOfHead(head,ele):
+    newBlock=Node(ele)
+    if head==None:
+        return newBlock
+    newBlock.next=head
+    return newBlock
+    cur = head
+    while cur.next != None:
+        cur = cur.next
+    cur.next = newBlock
+    return head
+
+def deletetailnode(head):
+    cur=head
+    previous=None
+    while cur.next!=None:
+        previous=cur
+        cur=cur.next
+    previous.next=None
+    return head
+l=[10,20,30,40,50,60,70,80,90,100]
+head=None
+for ele in l:
+   head=insertAtEndOfHead(head,ele)
+linkedlist(head)
+head=deletetailnode(head)
+linkedlist(head)
+
+head=deletetailnode(head)
+linkedlist(head)
