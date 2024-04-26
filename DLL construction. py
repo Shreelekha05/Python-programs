@@ -1,0 +1,43 @@
+#doubly linked list construction
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+def LeftToRight(head):
+    #print("left to right")
+    curr=head
+    while curr!=None:
+        print(curr.data,end=" ")
+        curr=curr.next
+    print()
+
+def RightToLeft(head):
+    #print("right to left")
+    tail=head
+    while tail.next!=None:
+        tail=tail.next
+    curr=tail
+    while curr!=None:
+        print(curr.data,end=" ")
+        curr=curr.prev
+    print()
+
+def addNodeatTail(head,val):
+    newBlock=Node(val)
+    if head==None:
+        return newBlock
+
+    tail=head
+    while tail.next!=None:
+        tail=tail.next
+    tail.next=newBlock
+    newBlock.prev=tail
+    return head
+n=int(input())
+l=list(map(int,input().split()))
+head=None
+for ele in l:
+    head=addNodeatTail(head,ele)
+LeftToRight(head)
+RightToLeft(head)
